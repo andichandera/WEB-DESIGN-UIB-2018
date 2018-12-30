@@ -258,3 +258,45 @@ input[type="reset"]:hover
     line-height:0;
     text-align:center;
 }
+
+a.icon {
+    background-color: #fed;
+    border: 2px solid white;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+a.icon:after,
+a.icon:before {
+    background: #fed;
+    border: 2px solid #fc6;
+    content: '';
+    position: absolute;
+}
+a.icon:hover,
+a.icon:hover:after,
+a.icon:hover:before {
+    background-color: #ffe;
+}
+
+a.user {
+    border-radius: 10px 10px 0 0;
+    height: 6px;
+    top: 19px;
+    width: 26px;
+}
+a.user:after {
+    border-radius: 10px;
+    height: 17px;
+    left: 4px;
+    top: -20px;
+    width: 14px;
+}
+a.user:before {
+    border: none;
+    height: 10px;
+    left: 9px;
+    top: -9px;
+    width: 8px;
+    z-index: 1;
+}
