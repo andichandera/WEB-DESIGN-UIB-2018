@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="public/css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="public/css/home.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="public/css/aboutus.css" />
 </head>
 <body>
     <div class="Header">
@@ -14,11 +15,11 @@
             <h1><a href="#"><img src="" alt="logo"></a></h1>
         </div>
         <ul>
-             <li><a href="#">Home</a></li>
+             <li><a href="index.html">Home</a></li>
              <li><a href="#">Our Services</a></li>
-             <li><a href="#">Design</a></li>
-             <li><a href="#">Blog</a></li>
-             <li><a href="#">Contact</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Our Team</a></li>
+             <li><a href="views/contactus.html">Contact</a></li>
              <li>
                 <div class="flexbox">
                     <div class="search">
@@ -28,9 +29,7 @@
                     </div>
                   </div>
              </li>
-             <li>
-               <a class="user icon" title="User" href="#"></a>
-             </li>
+             <li><a href="views/Login.html" target="_blank">Login</a></li>
          </ul>
     </div>
     <div class="content-width">
@@ -377,14 +376,14 @@
     </div>
     <div class="services">
     <div class="wrapper">
-        <h1>Parallax Flipping Cards</h1>
+        <h1>Our Services</h1>
         <div class="cols">
                   <div class="col" ontouchstart="this.classList.toggle('hover');">
                       <div class="container">
-                          <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                          <div class="front" style="background-image: url(./public/img/OurServices/InteriorDesign.jpg)">
                               <div class="inner">
-                                  <p>Diligord</p>
-                    <span>Lorem ipsum</span>
+                                  <p>Interior Design</p>
+                    <span>Home</span>
                               </div>
                           </div>
                           <div class="back">
@@ -458,16 +457,96 @@
         </div>
     </div>
     </div>
-    <form action="" method="post"></form>
-      <div class="feedback">
-      <div class="fheadline">Feedback</div></br></br>
-      <input type="text" name="name" value="" placeholder="Enter Name" autofocus>
-      <input type="Email" name="email" value="" placeholder="Enter Email"><br></br>   
-      <textarea name="message" placeholder="Enter Message Here...."></textarea>
-      <input type="submit" name="sab" value="Send"> <br><br>
-      <input type="reset" name="reset" value="Reset"> <br><br>   
-      </div>
-    </form>
+    <div class="aboutus">
+        <header>
+            <p></p>
+            <h1>About Our History</h1>
+        </header>
+        
+        <ul class="timeline">
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Lorem ipsum.</span>
+                <span class="time-wrapper"><span class="time">Feb 2015</span></span>
+              </div>
+              <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+            </div>
+          </li>
+        
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Lorem ipsum Anim.</span>
+                <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+              </div>
+              <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+            </div>
+          </li>
+        
+          <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Lorem Occaecat.</span>
+                <span class="time-wrapper"><span class="time">July 2014</span></span>
+              </div>
+              <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="team-section">
+        <h1>Our Team</h1>
+        <span class="border"></span>
+        <div class="ps">
+            <a href="#p1"><img src="./public/img/OurTeam/team1.jpg" alt=""></a>
+            <a href="#p2"><img src="./public/img/OurTeam/team1.jpg" alt=""></a>
+            <a href="#p3"><img src="./public/img/OurTeam/team1.jpg" alt=""></a>
+            <a href="#p2"><img src="./public/img/OurTeam/team1.jpg" alt=""></a>
+            <a href="#p3"><img src="./public/img/OurTeam/team1.jpg" alt=""></a>
+        </div>
+        <div class="section" id="p1">
+            <span class="name">Andi Chandera</span>
+            <span class="border"></span>
+            <p>
+                Our Story
+            </p>
+        </div>
+        <div class="section" id="p2">
+            <span class="name">Vincent</span>
+            <span class="border"></span>
+            <p>
+                Our Story
+            </p>
+        </div>
+        <div class="section" id="p3">
+            <span class="name">David</span>
+            <span class="border"></span>
+            <p>
+                Our Story
+            </p>
+        </div>
+        <div class="section" id="p4">
+            <span class="name">Hendri</span>
+            <span class="border"></span>
+            <p>
+                Our Story
+            </p>
+        </div>
+        <div class="section" id="p5">
+            <span class="name">A</span>
+            <span class="border"></span>
+            <p>
+                Our Story
+            </p>
+        </div>
+    </div>
     <div class="footer">
       <div id="button"></div>
         <div id="container">
@@ -479,6 +558,5 @@
       </div>
     </div>
     <script src="public/js/index.js"></script>
-    
 </body>
 </html>

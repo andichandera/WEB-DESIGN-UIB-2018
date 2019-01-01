@@ -61,6 +61,7 @@ body {
         justify-content: space-between;
         background: #222;
         align-items: center;
+        top: 0;
     }
     
     .Header ul{
@@ -259,44 +260,68 @@ input[type="reset"]:hover
     text-align:center;
 }
 
-a.icon {
-    background-color: #fed;
-    border: 2px solid white;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-}
-a.icon:after,
-a.icon:before {
-    background: #fed;
-    border: 2px solid #fc6;
-    content: '';
-    position: absolute;
-}
-a.icon:hover,
-a.icon:hover:after,
-a.icon:hover:before {
-    background-color: #ffe;
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background: #d3d3d3;
+    padding: 60px;
 }
 
-a.user {
-    border-radius: 10px 10px 0 0;
-    height: 6px;
-    top: 19px;
-    width: 26px;
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color :#3f3e3e;
+    font-size: 40px;
 }
-a.user:after {
-    border-radius: 10px;
-    height: 17px;
-    left: 4px;
-    top: -20px;
-    width: 14px;
+
+.border {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #3498db;
+    margin-bottom: 40px;
 }
-a.user:before {
-    border: none;
-    height: 10px;
-    left: 9px;
-    top: -9px;
-    width: 8px;
-    z-index: 1;
+
+.ps{
+    margin-bottom: 40px;
+}
+
+.ps a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.ps a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.ps a:hover > img {
+    filter:none;
+}
+
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: #3f3e3e;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+.section:target{
+    height: auto;
+}
+.name {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
 }

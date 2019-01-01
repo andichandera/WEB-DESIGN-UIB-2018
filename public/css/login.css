@@ -3,7 +3,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url(bg.jpg);
+  background-image: url(../img/Login_bg.jpg);
   background-size: cover;
   }
 .blue{
@@ -61,5 +61,10 @@ text-align: center;
   font-size: 18px;
   cursor: pointer;
   margin: 12px 0;
+  color: white;
+}
+
+.btn:hover {
+  background: green;
   color: white;
 }
