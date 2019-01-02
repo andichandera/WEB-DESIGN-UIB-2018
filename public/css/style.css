@@ -1,4 +1,7 @@
-
+* {
+    margin:0px;
+    padding: 0px;
+}
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -17,7 +20,8 @@ body {
     color: #333333;
     text-align: left;
     background-color: #fff;
-    position: -ms-page;
+    width: 100%;
+    height: 100%;
 }  
 
 .Header ul{
