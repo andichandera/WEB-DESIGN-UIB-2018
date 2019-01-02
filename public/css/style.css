@@ -51,7 +51,8 @@ body {
     text-align: center;
 }
 .Header div:first-child img{
-    filter: contrast(0);
+    filter: none;
+    width: 100px;
 }
 
 .Header div:first-child h1, .Header ul{
@@ -329,4 +330,9 @@ input[type="reset"]:hover
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
+}
+
+.section p {
+    text-align: center;
+    font-style: italic;
 }
